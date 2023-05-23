@@ -1,0 +1,443 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.modal {
+  display: block;
+  /* padding-left: 19px; */
+  top: 100px;
+}
+
+/* body {
+  width: 100%;
+} */
+
+div .left-login {
+  color: #7a2525;
+  width: 60%;
+}
+
+.close {
+  color: #fff;
+}
+
+.form {
+  max-width: 430px;
+  width: 85%;
+  padding: 0px;
+  background: #ffffff;
+  align-items: left;
+}
+
+div .head h3 {
+  font-weight: 600;
+}
+
+div .head h5 {
+  font-weight: 400;
+}
+
+form {
+  margin-top: 30px;
+}
+
+.form.logins {
+  padding-left: 5%;
+  padding-top: 2%;
+  padding-bottom: 5%;
+}
+
+.form .field {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 12px;
+  border-radius: 6px;
+}
+
+form label {
+  padding-bottom: 8px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.field input,
+.field button {
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.field input {
+  border: 1px solid #000000;
+  padding-left: 15px;
+}
+
+.field button {
+  background: #10DF95;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.field span {
+  color: #000;
+  background: #10DF95;
+  border: none;
+
+}
+
+.medias-button {
+  background-color: #10DF95;
+  border: #10DF95;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.medias-button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.medias-button a img {
+  width: 14px;
+  height: 14px;
+}
+
+div .medias-button span {
+  color: #000000;
+  padding: 10px;
+
+
+  width: 100px;
+}
+
+.form-link {
+  text-align: center;
+  margin-top: 10px;
+
+}
+
+.form-link span,
+.form-link a {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.form-content a:hover {
+  text-decoration: underline;
+}
+
+.line {
+  position: relative;
+  height: 1px;
+  width: 100%;
+  margin: 36px 0;
+  background-color: #d4d4d4;
+}
+
+.line::before {
+  content: 'Or';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  color: #232836;
+  padding: 0 15px;
+}
+
+.media-options {
+  background-color: #ffffff;
+  border: #000000;
+
+}
+
+.media-options a {
+  display: flex;
+  border: solid black 2px;
+  align-items: center;
+  justify-content: center;
+}
+
+.media-options a img {
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+}
+
+div .media-options span {
+  color: #000000;
+  background-color: #fff;
+}
+
+a.google {
+  border: 1px solid #000000;
+  border-radius: 4px;
+
+}
+
+a.signin {
+  border: 1px solid #000000;
+  border-radius: 4px;
+}
+
+/* .login {
+  display: block;
+  padding-left: 20%;
+  padding-top: 10%;
+  padding-right: 20%;
+} */
+
+.login-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.login-header {
+  border: none;
+  padding: 0px;
+}
+
+.login-content .login-left {
+  width: 60%;
+  padding-right: 100px;
+  background-color: rgb(255, 255, 255);
+}
+
+.login-content .login-right {
+  width: 40%;
+  background-color: #132A3A;
+}
+
+.login-right img {
+  position: absolute;
+  right: 0px;
+  width: 450px;
+  top: 50px;
+}
+
+div .modal-body {
+  padding: 0rem;
+}
+
+@media (min-width: 200px) and (max-width: 993px) {
+  .login-right img {
+    display: none;
+  }
+
+  .login-content .login-right {
+    display: none;
+  }
+
+  .login-content .login-left {
+    width: 100%;
+    padding-right: 0px;
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+/*------------------------------------------- sso login------------------------------------------------------------------------- */
+.sso {
+  color: #ffffff;
+  background-color: #132A3A;
+  border-radius: 4px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  padding: 1%;
+  overflow-x: hidden;
+}
+
+.sso-header {
+  display: flex;
+}
+
+.sso-title {
+  width: 50%;
+  padding: 1%;
+  padding-bottom: 0px;
+  padding-right: 10px;
+}
+
+.sso-title span {
+  padding: 0px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.sso-buttons {
+  width: 50%;
+  display: flex;
+  font-size: 14px;
+  padding-left: 4%;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  align-items:flex-end;
+  border: none;
+}
+
+.sso-buttons a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #10DF95;
+  margin-right: 2rem;
+  margin-top: 1.2rem;
+}
+
+.sso-buttons h6 {
+  font-size: 14px;
+}
+
+.sso h5 {
+  font-weight: normal;
+  color: #929090;
+}
+
+.sso h6 {
+  color: #10DF95;
+  padding-right: 25px;
+  padding-left: 25px;
+
+}
+
+.btn-back {
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.btn-continue {
+  background-color: #10DF95;
+  border: none;
+  border-radius: 4px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.sso-search {
+  display: block;
+  padding: 10px;
+}
+
+.sso-search .icon {
+  position: absolute;
+  top: 46%;
+  left: 30px;
+  transform: translateY(-15%);
+  color: grey;
+}
+
+.search-input {
+  background-color: #204660;
+  border: none;
+  width: 100%;
+  padding-left: 40px;
+  padding-top: 2px;
+  font-size: 14px;
+}
+
+.sso input {
+  height: 40px;
+}
+
+.select-sso {
+  display: flex;
+  margin: 10px;
+}
+
+.select-sso img {
+  height: 70px;
+  width: 70px;
+
+}
+
+
+.sso input[type='search'] {
+  background-image: url('search.png') no-repeat;
+  background-position: left center 5px;
+}
+
+@media (min-width: 200px) and (max-width: 993px) {
+  
+}
+
+/* -----------------------------------------------------logindoctor----------------------------------------------------------------- */
+
+.remember input {
+  margin-left: 0px;
+}
+
+.remember span {
+  font-size: 16px;
+}
+
+.remember a {
+  margin-left: 40px;
+  font-size: 16px;
+  color: #5e5b5b;
+}
+
+.action-btn button {
+  color: #000;
+  background-color: #10DF95;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  margin-top: 20px;
+  font-size: 18px;
+
+}
+
+.action-btn button a {
+  color: #000;
+}
+
+.login-body2 {
+  height: 500px;
+}
+
+.login-content .login-right2 {
+  background-color: #132A3A;
+}
+
+.login-right2 img {
+  position: relative;
+  height: 340px;
+  top: 100px;
+}
+
+
+.topright {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+
+.fade{
+  background-color:  rgba(0, 0, 0, 0.7);
+}
